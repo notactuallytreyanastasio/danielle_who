@@ -2071,6 +2071,19 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+.episode-card__time {
+  font-size: 0.8rem;
+  color: var(--companion-accent);
+  font-style: italic;
+  padding: 2px 8px;
+  background: rgba(255, 215, 0, 0.1);
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
 .episode-card__parts {
   font-size: 0.75rem;
   color: var(--text-muted);

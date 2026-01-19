@@ -3,6 +3,58 @@ import type { WikiEpisode, WikiData } from '@core/wiki-data'
 import { getWikiStats, parseDoctor } from '@core/wiki-data'
 import { useUrlState, useUrlBooleanState } from '@core/use-url-state'
 
+/**
+ * Extract in-universe time from setting_location field.
+ * Examples:
+ * - "Paris, July 1794" -> "July 1794"
+ * - "London & Bedfordshire, 2167" -> "2167"
+ * - "Maitland's ship, Sense Sphere, 28th century" -> "28th century"
+ * - "Skaro, circa January 2064" -> "circa January 2064"
+ * - "Earth, circa 100,000 BC" -> "circa 100,000 BC"
+ */
+function extractInUniverseTime(settingLocation: string | null | undefined): string | null {
+  if (!settingLocation) return null
+
+  // Patterns that indicate time information
+  const timePatterns = [
+    // Specific years with optional month: "July 1794", "2167", "circa 2064"
+    /\b(circa\s+)?([A-Z][a-z]+\s+)?(\d{1,4})\s*(AD|BC|CE|BCE)?\b/i,
+    // Century patterns: "28th century", "21st century"
+    /\b(\d{1,2})(st|nd|rd|th)\s+century\b/i,
+    // Large years: "100,000 BC", "5,000,000,000"
+    /\b(circa\s+)?[\d,]+\s*(AD|BC|CE|BCE)\b/i,
+    // "Year" prefix: "Year 5 billion"
+    /\bYear\s+[\d\w\s,]+/i,
+    // Decade patterns: "1960s", "1980s"
+    /\b\d{4}s\b/,
+  ]
+
+  // Split by semicolons to handle multiple settings
+  const parts = settingLocation.split(';')
+  const times: string[] = []
+
+  for (const part of parts) {
+    // Look for time-related segments after commas
+    const segments = part.split(',').map(s => s.trim())
+
+    for (const segment of segments) {
+      // Check if segment contains time info
+      for (const pattern of timePatterns) {
+        if (pattern.test(segment)) {
+          // Clean up and add the time segment
+          const cleanTime = segment.trim()
+          if (cleanTime && !times.includes(cleanTime)) {
+            times.push(cleanTime)
+          }
+          break
+        }
+      }
+    }
+  }
+
+  return times.length > 0 ? times.join('; ') : null
+}
+
 // Get base path for GitHub Pages
 const BASE_PATH = import.meta.env.BASE_URL || '/'
 
@@ -17,6 +69,7 @@ interface EpisodeCardProps {
 
 function EpisodeCard({ episode, isExpanded, onToggle }: EpisodeCardProps) {
   const doctor = parseDoctor(episode)
+  const inUniverseTime = extractInUniverseTime(episode.setting_location)
 
   const getDoctorColor = (doc: string | null): string => {
     if (!doc) return '#666'
@@ -64,6 +117,11 @@ function EpisodeCard({ episode, isExpanded, onToggle }: EpisodeCardProps) {
           <h3 className="episode-card__title">{episode.title}</h3>
           <div className="episode-card__meta">
             {doctor && <span className="episode-card__doctor">{doctor}</span>}
+            {inUniverseTime && (
+              <span className="episode-card__time" title="In-universe time period">
+                {inUniverseTime}
+              </span>
+            )}
             {episode.episode_count > 1 && (
               <span className="episode-card__parts">{episode.episode_count} parts</span>
             )}
