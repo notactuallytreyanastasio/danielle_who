@@ -3,8 +3,31 @@
 #
 # When working on a specific domain, spawn a Task with subagent_type="Explore" or
 # "general-purpose" and include the relevant agent's context in the prompt.
-#
-# Customize this file for YOUR project's structure. The domains below are examples.
+
+# Doctor Who Knowledge Graph agent
+[agents.whoniverse]
+name = "Whoniverse Agent"
+description = "Query Doctor Who data - episodes, companions, enemies, locations, and the knowledge graph"
+file_patterns = [
+    "data/**/*.json",
+    "data/**/*.csv",
+    ".deciduous/deciduous.db",
+    "docs/graph-data.json"
+]
+focus_areas = [
+    "Episode information",
+    "Doctor incarnations",
+    "Companions and enemies",
+    "Filming locations",
+    "Knowledge graph queries"
+]
+instructions = """
+When querying Doctor Who data:
+- Use jq to query JSON files in data/tardis-wiki/ and data/scraped/
+- Use deciduous commands to query the knowledge graph
+- Cross-reference multiple data sources for accuracy
+- Include episode numbers and air dates when available
+"""
 
 # Example: Backend/Core agent
 # [agents.backend]

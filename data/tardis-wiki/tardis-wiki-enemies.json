@@ -1,0 +1,692 @@
+[
+  {
+    "name": "Daleks",
+    "species_type": "Species",
+    "aliases": [
+      "Mark III Travel Machines",
+      "Enemy Daleks",
+      "Ironsides"
+    ],
+    "origin": "Skaro, Ameron, Necros, Seriphia Galaxy, New Skaro, M-1",
+    "first_appearance": "The Daleks",
+    "first_episode": null,
+    "notable_individuals": [
+      "Dalek Prime",
+      "Black Dalek Leader",
+      "Gold Dalek",
+      "Metaltron",
+      "Dalek Sec",
+      "Dalek Caan",
+      "Dalek X",
+      "Dalek Time Controller",
+      "Dalek Time Strategist",
+      "Supreme Dalek",
+      "Eternal Dalek",
+      "Prime Minister of the Daleks",
+      "Rusty",
+      "Emperor of the Restoration",
+      "Dalek Prime Strategist",
+      "Reconnaissance Dalek",
+      "Driller Dalek"
+    ],
+    "affiliated_with": [
+      "Davros",
+      "Dalek Empire",
+      "Cult of Skaro",
+      "Reconnaissance scout",
+      "New Dalek Empire",
+      "Ironside Project",
+      "New Dalek Paradigm",
+      "Pandorica Alliance",
+      "Resurrected Dalek Empire",
+      "Parliament of the Daleks",
+      "Defence Drones"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Dalek",
+    "description": "Dalek Main aliases: Mark III Travel Machines, Enemy Daleks, Ironsides Biological type: Dalek mutants Affiliated with: Davros, Dalek Empire, Cult of Skaro, Reconnaissance scout, New Dalek Empire, Ironside Project, New Dalek Paradigm, Pandorica Alliance, Resurrected Dalek Empire, Parliament of the Daleks, Defence Drones Place of origin: Skaro, Ameron, Necros, Seriphia Galaxy, New Skaro, M-1 Notable individuals: Dalek Prime, Black Dalek Leader, Gold Dalek, Metaltron, Dalek Sec, Dalek Caan, Dalek X, Dalek Time Controller, Dalek Time Strategist, Supreme Dalek, Eternal Dalek, Prime Minister of the D"
+  },
+  {
+    "name": "Cybermen",
+    "species_type": "Species",
+    "aliases": [
+      "Race",
+      "Human.2",
+      "Scarecrows"
+    ],
+    "origin": "Mondas, Telos, Earth, Planet 14, Marinus, Mondasian colony ship, Pete's World, parallel universe",
+    "first_appearance": "The Tenth Planet",
+    "first_episode": null,
+    "notable_individuals": [
+      "Krail",
+      "Cyber-Controller",
+      "Kroton",
+      "Zogron",
+      "Cyber-Leader",
+      "Limehouse Lurker",
+      "Zheng",
+      "Bremm",
+      "John Lumic",
+      "Lisa Hallett",
+      "Danny Pink",
+      "Wooden Cyberman",
+      "Handles",
+      "Bill Potts",
+      "Ashad",
+      "CyberReaper"
+    ],
+    "affiliated_with": [
+      "Tobias Vaughn",
+      "the Master",
+      "Cybus Industries",
+      "Pandorica Alliance",
+      "Borg"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Cyberman",
+    "description": "Cyberman Main aliases: Cyber-Race, Human.2, Plague Warriors, Special Commando Units, Royal Champions, Scarecrows Biological type: Cyborgs Affiliated with: Tobias Vaughn, the Master, Cybus Industries, Pandorica Alliance, Borg Place of origin: Mondas, Telos, Earth, Planet 14, Marinus, Mondasian colony ship, Pete's World, parallel universe Notable individuals: Krail, Cyber-Controller, Kroton, Zogron, Cyber-Leader, Limehouse Lurker, Zheng, Bremm, John Lumic, Lisa Hallett, Danny Pink, Wooden Cyberman, Handles, Bill Potts, Ashad, CyberReaper First appearance: The Tenth Planet Appearances: see list M"
+  },
+  {
+    "name": "The Master",
+    "species_type": "Individual",
+    "aliases": [
+      "see list"
+    ],
+    "origin": "Gallifrey",
+    "first_appearance": null,
+    "first_episode": null,
+    "notable_individuals": [],
+    "affiliated_with": [
+      "The Deca",
+      "Dalek Empire",
+      "Disciples of Saxon",
+      "MADAM",
+      "MI6"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/The_Master",
+    "description": "The Master Inventor UNIT era Decayed Tremas Execution Bruce Preacher Android Reborn War Child Saxon Missy Lumiat Spy Main aliases: see list Species: Time Lord, Trakenite, Human Job: Teacher, Truant officer, Invasion consultant, Minister of Defence, Prime Minister, Spy Affiliated with: The Deca, Dalek Empire, Disciples of Saxon, MADAM, MI6 Place of origin: Gallifrey Mother: The Master's mother Father: Marnal Children: The Master's daughter, Missy's child Spouses: Lucy Saxon, Bobo Braithwaite Partner: Thirteenth Doctor Pet: Flipper Appearances: see list Memorable moment Another memorable moment "
+  },
+  {
+    "name": "Weeping Angels",
+    "species_type": "Species",
+    "aliases": [
+      "The Lonely Assassins"
+    ],
+    "origin": null,
+    "first_appearance": "Blink",
+    "first_episode": null,
+    "notable_individuals": [
+      "Angel Bob",
+      "Statue of Liberty",
+      "Graveyard Angel",
+      "Rogue Angel"
+    ],
+    "affiliated_with": [
+      "Order of the Three Angels",
+      "the Governors",
+      "the Division"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Weeping_Angel",
+    "description": "Weeping Angel Main aliases: The Lonely Assassins Biological type: Quantum-locking beings Affiliated with: Order of the Three Angels, the Governors, the Division Notable individuals: Angel Bob, Statue of Liberty, Graveyard Angel, Rogue Angel First appearance: Blink Appearances: see list Memorable moment Another memorable moment One more memorable moment"
+  },
+  {
+    "name": "Sontarans",
+    "species_type": "Species",
+    "aliases": [
+      "goblin",
+      "troll"
+    ],
+    "origin": "Sontar",
+    "first_appearance": "The Time Warrior",
+    "first_episode": null,
+    "notable_individuals": [
+      "Sontar",
+      "Sontaran-Prime",
+      "Strax",
+      "Kaagh",
+      "Starn",
+      "Stonn",
+      "Sarg",
+      "Jingo Linx",
+      "Styre",
+      "Stor",
+      "Stike",
+      "Stave",
+      "Steg",
+      "Brilox",
+      "Brak",
+      "Lerox",
+      "Staal",
+      "Stomm",
+      "Stark",
+      "Kragar"
+    ],
+    "affiliated_with": [
+      "Sontaran Empire",
+      "the Alliance",
+      "Pandorica Alliance",
+      "Androgums"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Sontaran",
+    "description": "Sontaran Main aliases: Sont, goblin, troll Biological type: Humanoid Affiliated with: Sontaran Empire, the Alliance, Pandorica Alliance, Androgums Place of origin: Sontar Notable individuals: Sontar, Sontaran-Prime, Strax, Kaagh, Starn, Stonn, Sarg, Jingo Linx, Styre, Stor, Stike, Stave, Steg, Brilox, Brak, Lerox, Staal, Stomm, Stark, Kragar First appearance: The Time Warrior Appearances: see list Memorable moment Another memorable moment One more memorable moment"
+  },
+  {
+    "name": "Silurians",
+    "species_type": "Species",
+    "aliases": [
+      "Earth Reptile",
+      "Reptile people"
+    ],
+    "origin": "Earth",
+    "first_appearance": "Doctor Who and the Silurians",
+    "first_episode": null,
+    "notable_individuals": [
+      "Okdel L'da",
+      "Morka",
+      "Icthar",
+      "Imorkal",
+      "Melanie Baal",
+      "Malohkeh",
+      "Restac",
+      "Kestral",
+      "Seelac",
+      "Vastra",
+      "The Captain",
+      "Jastrok",
+      "Horlak"
+    ],
+    "affiliated_with": [
+      "Sea Devils",
+      "Pandorica Alliance",
+      "Myrka"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Silurian",
+    "description": "Silurian Early Middle Late Main aliases: Earth Reptile, Reptile people, Psionosauropoda-morphae, Homo reptilia, Eocene, Lizard Men, Reptilia sapiens Biological type: Reptilian humanoid Affiliated with: Sea Devils, Pandorica Alliance, Myrka Place of origin: Earth Notable individuals: Okdel L'da, Morka, Icthar, Imorkal, Melanie Baal, Malohkeh, Restac, Kestral, Seelac, Vastra, The Captain, Jastrok, Horlak First appearance: Doctor Who and the Silurians Appearances: see list Memorable moment Another memorable moment One more memorable moment Behind the scenes video"
+  },
+  {
+    "name": "Ice Warriors",
+    "species_type": "Species",
+    "aliases": [
+      "Martian",
+      "New Martian",
+      "Neo-Aretian",
+      "Saurian",
+      "Saurian Evolutionary"
+    ],
+    "origin": "Mars",
+    "first_appearance": "The Ice Warriors",
+    "first_episode": null,
+    "notable_individuals": [
+      "Varga",
+      "Slaar",
+      "Izlyr",
+      "Azaxyr",
+      "Harma",
+      "Rhukk",
+      "Aklaar",
+      "Ssard",
+      "Xznaal",
+      "Izdaal",
+      "Hass",
+      "Slaadek",
+      "Skaldak",
+      "\"Friday\"",
+      "Iraxxa"
+    ],
+    "affiliated_with": [
+      "The Alliance",
+      "Galactic Federation"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Ice_Warrior",
+    "description": "Ice Warrior Main aliases: Martian, New Martian, Neo-Aretian, Saurian, Saurian Evolutionary Biological type: Reptilian cyborg humanoids Affiliated with: The Alliance, Galactic Federation, Martian League Place of origin: Mars Notable individuals: Varga, Slaar, Izlyr, Azaxyr, Harma, Rhukk, Aklaar, Ssard, Xznaal, Izdaal, Hass, Slaadek, Skaldak, \"Friday\", Iraxxa First appearance: The Ice Warriors Appearances: see list Memorable moment Another memorable moment One more memorable moment Behind the scenes video"
+  },
+  {
+    "name": "Autons",
+    "species_type": "Species",
+    "aliases": [],
+    "origin": "Earth",
+    "first_appearance": "Spearhead from Space",
+    "first_episode": null,
+    "notable_individuals": [
+      "Auton scout",
+      "Channing",
+      "Alisha Hammerson",
+      "Graeme",
+      "Graham Winslet",
+      "Ingrid Krafchin",
+      "Mickey Smith",
+      "Rory Williams",
+      "Half-Head Pierrot",
+      "Boris Johnson"
+    ],
+    "affiliated_with": [],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Auton",
+    "description": "Auton Biological type: Plastic automatons Place of origin: Earth Notable individuals: Auton scout, Channing, Alisha Hammerson, Graeme, Graham Winslet, Ingrid Krafchin, Mickey Smith, Rory Williams, Half-Head Pierrot, Boris Johnson First appearance: Spearhead from Space Appearances: see list Memorable moment Another memorable moment One more memorable moment Behind the scenes video"
+  },
+  {
+    "name": "Zygons",
+    "species_type": "Species",
+    "aliases": [],
+    "origin": "Zygor",
+    "first_appearance": "Terror of the Zygons",
+    "first_episode": null,
+    "notable_individuals": [
+      "Broton",
+      "Torlakh",
+      "Lauren Anderson",
+      "Haygoth",
+      "Landak",
+      "Osgood",
+      "Bonnie"
+    ],
+    "affiliated_with": [
+      "Skarasen",
+      "Zygon Empire",
+      "Pandorica Alliance"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Zygon",
+    "description": "Zygon Biological type: Amphibious metamorphic humanoid Affiliated with: Skarasen, Zygon Empire, Pandorica Alliance Place of origin: Zygor Notable individuals: Broton, Torlakh, Lauren Anderson, Haygoth, Landak, Osgood, Bonnie First appearance: Terror of the Zygons Appearances: see list Behind the scenes video"
+  },
+  {
+    "name": "Ood",
+    "species_type": "Species",
+    "aliases": [
+      "Oodkind",
+      "the Legion of the Beast"
+    ],
+    "origin": "Ood Sphere",
+    "first_appearance": "Tardisode 8",
+    "first_episode": null,
+    "notable_individuals": [
+      "Ood Sigma",
+      "Klineman Halpen",
+      "Ood Elder",
+      "Nephew",
+      "Brian"
+    ],
+    "affiliated_with": [
+      "Ood Brain",
+      "Humans",
+      "the Beast"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Ood",
+    "description": "Ood Main aliases: Oodkind, the Legion of the Beast Biological type: Cephalopod-faced humanoid Affiliated with: Ood Brain, Humans, the Beast Place of origin: Ood Sphere Notable individuals: Ood Sigma, Klineman Halpen, Ood Elder, Nephew, Brian First appearance: Tardisode 8 Appearances: see list Memorable moment Another memorable moment One more memorable moment Behind the scenes video"
+  },
+  {
+    "name": "Judoon",
+    "species_type": "Species",
+    "aliases": [],
+    "origin": "Judoonia",
+    "first_appearance": "Smith and Jones",
+    "first_episode": null,
+    "notable_individuals": [
+      "Judoon captain",
+      "Rok Ma",
+      "Tybo",
+      "Kybo",
+      "Pol-Kon-Don"
+    ],
+    "affiliated_with": [
+      "Galactic Council",
+      "Shadow Proclamation",
+      "Pandorica Alliance"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Judoon",
+    "description": "Judoon Biological type: Rhinoform biped Affiliated with: Interstellar governments, Galactic Council, Shadow Proclamation, Pandorica Alliance Place of origin: Judoonia Notable individuals: Judoon captain, Rok Ma, Tybo, Kybo, Pol-Kon-Don First mentioned in: Made of Steel Terrance Dicks, Quick Reads (BBC Books, 2007). First appearance: Smith and Jones Appearances: see list Memorable moment Another memorable moment One more memorable moment Behind the scenes video"
+  },
+  {
+    "name": "The Silence",
+    "species_type": "Species",
+    "aliases": [],
+    "origin": null,
+    "first_appearance": "Prequel to The Impossible Astronaut",
+    "first_episode": null,
+    "notable_individuals": [
+      "The Scream"
+    ],
+    "affiliated_with": [
+      "The Church of the Silence",
+      "Papal Mainframe",
+      "Kovarian Chapter"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Silent",
+    "description": "Silent Biological type: Humanoid Affiliated with: The Church of the Silence, the Papal Mainframe, the Kovarian Chapter Notable individuals: The Scream, Chu'Lac First appearance: Prequel to The Impossible Astronaut Appearances: see list Memorable moment Behind the scenes video"
+  },
+  {
+    "name": "Davros",
+    "species_type": "Individual",
+    "aliases": [
+      "Emperor Dalek"
+    ],
+    "origin": "Skaro",
+    "first_appearance": "Genesis of the Daleks Terry Nation, Doctor Who season 12 (BBC1, 1975).",
+    "first_episode": null,
+    "notable_individuals": [],
+    "affiliated_with": [
+      "Scientific Elite",
+      "Imperial Daleks",
+      "New Dalek Empire"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Davros",
+    "description": "Davros Main aliases: The Great Healer, Emperor Dalek, Dr. Vaso Species: Kaled Job: Scientist, Soldier Affiliated with: Scientific Elite, Imperial Daleks, New Dalek Empire Place of origin: Skaro Mother: Calcula Father: Quested Adoptive father: Nasgard Sister: Yarvell Children: Falkus First appearance: Genesis of the Daleks Terry Nation, Doctor Who season 12 (BBC1, 1975). Appearances: see list Main actor: Terry Molloy Other actors: Michael Wisher, David Gooderson, Julian Bleach, Joey Price, SP Bowling Other voice actors: Rory Jennings, Colin Baker, Ben Crystal Memorable moment Another memorable "
+  },
+  {
+    "name": "The Rani",
+    "species_type": "Individual",
+    "aliases": [
+      "Melanie Bush",
+      "Mrs Flood"
+    ],
+    "origin": "Gallifrey",
+    "first_appearance": "The Mark of the Rani",
+    "first_episode": null,
+    "notable_individuals": [],
+    "affiliated_with": [],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/The_Rani",
+    "description": "The Rani 1 \"2\" Flood Bi-generated Main aliases: Cleopatra Selene, Melanie Bush, Lania, Professor Baxton, Principal C.B. Wainwright, Mrs Flood, Frau Rani Species: Time Lord Job: Prison governor Place of origin: Gallifrey First appearance: The Mark of the Rani Appearances: see list Main TV actor: Kate O'Mara Main voice actor: Siobhan Redmond Other actors: Anita Dobson, Archie Panjabi Memorable moment Another memorable moment Incarnations of the Rani 1 • \"2\" • Flood • Bi-generation Ushas, better known as the Rani and known more formally as Ushas of Miasimia Goria, or, in other accounts, as simply"
+  },
+  {
+    "name": "Rassilon",
+    "species_type": "Individual",
+    "aliases": [
+      "AzalonRazlonRa"
+    ],
+    "origin": "Gallifrey",
+    "first_appearance": "Star Death",
+    "first_episode": null,
+    "notable_individuals": [],
+    "affiliated_with": [
+      "Founders of Gallifrey"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Rassilon",
+    "description": "Rassilon A B C D E F G Main aliases: AzalonRazlonRa Job: Solar engineer Affiliated with: Founders of Gallifrey Place of origin: Gallifrey First mentioned in: The Deadly Assassin First appearance: Star Death Appearances: see list Main actor: Timothy Dalton Main voice actor: Don Warrington Other actors: Richard Mathews, Donald Sumpter Other voice actors: Conrad WestmaasLouise JamesonTerrence HardimanRichard Armitage"
+  },
+  {
+    "name": "Omega",
+    "species_type": "Individual",
+    "aliases": [
+      "Ohm"
+    ],
+    "origin": "Gallifrey",
+    "first_appearance": "The Three Doctors",
+    "first_episode": null,
+    "notable_individuals": [],
+    "affiliated_with": [
+      "Founders of Gallifrey"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Omega",
+    "description": "Omega Main aliases: Omegon, Ohm, The One Who is Lost Species: Time Lord, Gallifreyan Job: Solar engineer Affiliated with: Founders of Gallifrey Place of origin: Gallifrey Spouse: Patience First appearance: The Three Doctors Appearances: see list Main actor: Stephen Thorne Main voice actor: Ian Collier Other actors: Alan Chuntz, Ian Collier, Peter Davison, Mark Corden Other voice actors: Daniel Brocklebank, Brian Blessed, Nicholas Briggs"
+  },
+  {
+    "name": "The Great Intelligence",
+    "species_type": "Entity",
+    "aliases": [
+      "Arnold",
+      "Yog-Sothoth"
+    ],
+    "origin": "Pre-universe",
+    "first_appearance": "The Abominable Snowmen",
+    "first_episode": null,
+    "notable_individuals": [],
+    "affiliated_with": [],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Great_Intelligence",
+    "description": "Great Intelligence Main aliases: The Master, Staff Sergeant Arnold, Yog-Sothoth, the Hollow Man, Maha Species: Great Old One, Elder God Place of origin: Pre-universe First appearance: The Abominable Snowmen Appearances: see list Main actor: Richard E Grant Main voice actor: Ian McKellen Other actors: Wolfe Morris, Jack Woolgar, Jack Watling, Peter Silverleaf Other voice actors: Cameron Strefford, Tim Bentinck, Sam Clemens Memorable moment"
+  },
+  {
+    "name": "The Black Guardian",
+    "species_type": "Entity",
+    "aliases": [
+      "Mr. Edge",
+      "Cassim Alibaba"
+    ],
+    "origin": null,
+    "first_appearance": "The Armageddon Factor",
+    "first_episode": null,
+    "notable_individuals": [],
+    "affiliated_with": [],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Black_Guardian",
+    "description": "Black Guardian Main aliases: Mr. Edge, Cassim Alibaba Species: Guardian of Time Children: Omar First mentioned in: The Ribos Operation First appearance: The Armageddon Factor Appearances: see list Main actor: Valentine Dyall Main voice actor: David Troughton Other actors: Angus MacKay Memorable moment Another memorable moment One more memorable moment The Black Guardian, also known as the Guardian of Darkness and Chaos, was an anthropomorphic personification of the forces opposed to the powers of light, as embodied by the White Guardian. With the White Guardian and four others, he was part of "
+  },
+  {
+    "name": "The Valeyard",
+    "species_type": "Individual",
+    "aliases": [
+      "Popplewick",
+      "Zon",
+      "Jack the Ripper",
+      "the Doctor",
+      "Genesta"
+    ],
+    "origin": null,
+    "first_appearance": "The Mysterious Planet",
+    "first_episode": null,
+    "notable_individuals": [],
+    "affiliated_with": [],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/The_Valeyard",
+    "description": "The Valeyard Main aliases: J.J. Chambers, Mr Popplewick, Zon, Zimmerman, Jack the Ripper, the Doctor, Tim Hope, Timothy Yardvale, Genesta Species: The Doctor's species First appearance: The Mysterious Planet Appearances: see list Main actor: Michael Jayston Other actors: Geoffrey Hughes Other voice actors: John BanksAnthony HowellLiz White Memorable moment Another memorable moment Incarnations of the Doctor Widely accepted 1 • 2 • 3 • 4 • 5 • 6 • 7 • 8 • War • 9 • 10 • 11 • 12 • 13 • 14 • 15 Others / unplaced incarnations Timeless Child • Fugitive • \"Morbius\"\"Muldwych\" • \"Relic\" • The Curator "
+  },
+  {
+    "name": "Missy",
+    "species_type": "Individual",
+    "aliases": [
+      "see list"
+    ],
+    "origin": "Gallifrey",
+    "first_appearance": "Deep Breath",
+    "first_episode": null,
+    "notable_individuals": [],
+    "affiliated_with": [
+      "3W Institute",
+      "MADAM"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Missy",
+    "description": "Missy Main aliases: see list Species: Time Lord Job: Headteacher Affiliated with: 3W Institute, MADAM Place of origin: Gallifrey Children: Missy's child Spouse: Bobo Braithwaite First mentioned in: The Bells of Saint John First appearance: Deep Breath Appearances: see list Main actor: Michelle Gomez Memorable moment Another memorable moment One more memorable moment"
+  },
+  {
+    "name": "The Toymaker",
+    "species_type": "Individual",
+    "aliases": [
+      "No Cha"
+    ],
+    "origin": null,
+    "first_appearance": "The Celestial Toymaker Brian Hayles, Doctor Who season 3 (BBC1, 1966).",
+    "first_episode": null,
+    "notable_individuals": [],
+    "affiliated_with": [
+      "Pantheon of Discord",
+      "The Toymaker's legions",
+      "Guardians of Time"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/The_Toymaker",
+    "description": "The Toymaker Main aliases: The Guardian of DreamsThe Crystal GuardianThe Crystal Guardian of Dream and FantasyThe MandarinNo ChaUrizen's game-masterMr EmporiumGod of Games Species: Guardian of Time Affiliated with: Pantheon of Discord, The Toymaker's legions, Guardians of Time Sister: Hecuba Children: Maestro Grandchildren: Henry Arbinger First appearance: The Celestial Toymaker Brian Hayles, Doctor Who season 3 (BBC1, 1966). Appearances: see list Main actor: Michael Gough Main voice actor: David Bailie Other actors: Neil Patrick Harris, Luke Featherston Other voice actors: Paul Antony-Barber,"
+  },
+  {
+    "name": "Yeti",
+    "species_type": "Species",
+    "aliases": [],
+    "origin": null,
+    "first_appearance": null,
+    "first_episode": null,
+    "notable_individuals": [],
+    "affiliated_with": [],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Yeti",
+    "description": null
+  },
+  {
+    "name": "Sea Devils",
+    "species_type": "Species",
+    "aliases": [
+      "Deep One",
+      "Earth Reptile"
+    ],
+    "origin": "Earth",
+    "first_appearance": "The Sea Devils",
+    "first_episode": null,
+    "notable_individuals": [
+      "Chief Sea Devil",
+      "Sauvix",
+      "Daniel Claremont",
+      "Marsissus",
+      "Salt",
+      "Tide"
+    ],
+    "affiliated_with": [
+      "Silurians"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Sea_Devil",
+    "description": "Sea Devil Main aliases: Sea-Devil, ocean demon, Deep One, Aquatic Silurian, Earth Reptile, Homo Reptilia, Reptilia Sapiens, Homo Aqua Biological type: Reptilian humanoid Affiliated with: Silurians Place of origin: Earth Notable individuals: Chief Sea Devil, Sauvix, Daniel Claremont, Marsissus, Salt, Tide First appearance: The Sea Devils Appearances: see list Memorable moment Behind the scenes video"
+  },
+  {
+    "name": "Draconian",
+    "species_type": "Species",
+    "aliases": [],
+    "origin": "Draconia",
+    "first_appearance": "Frontier in Space",
+    "first_episode": null,
+    "notable_individuals": [
+      "Draconian Emperor",
+      "Draconian prince",
+      "Red Emperor",
+      "Kaon",
+      "Eskon",
+      "Kothar",
+      "Kraden"
+    ],
+    "affiliated_with": [
+      "Galactic Federation",
+      "the Alliance",
+      "Pandorica Alliance"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Draconian",
+    "description": "Draconian Biological type: Humanoid reptiles Affiliated with: Galactic Federation, the Alliance, Pandorica Alliance Place of origin: Draconia Notable individuals: Draconian Emperor, Draconian prince, Red Emperor, Kaon, Eskon, Kothar, Kraden First appearance: Frontier in Space Appearances: see list"
+  },
+  {
+    "name": "Ogrons",
+    "species_type": "Species",
+    "aliases": [],
+    "origin": "Ogron planet",
+    "first_appearance": "Day of the Daleks",
+    "first_episode": null,
+    "notable_individuals": [
+      "Gnork",
+      "Garshak",
+      "Lost Boy",
+      "Brarshak",
+      "Marteek",
+      "Doctor Ogron"
+    ],
+    "affiliated_with": [
+      "Daleks",
+      "the Remote",
+      "the Master",
+      "the Alliance"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Ogron",
+    "description": "Ogron Biological type: Humanoid Affiliated with: Daleks, the Remote, the Master, the Alliance Place of origin: Ogron planet Notable individuals: Gnork, Garshak, Lost Boy, Brarshak, Marteek, Doctor Ogron First appearance: Day of the Daleks Appearances: see list"
+  },
+  {
+    "name": "Mechanoids",
+    "species_type": "Species",
+    "aliases": [
+      "Mechon",
+      "Mechonoid"
+    ],
+    "origin": "Mechanus",
+    "first_appearance": "The Chase",
+    "first_episode": null,
+    "notable_individuals": [
+      "Menoid",
+      "Mechanoid Queen",
+      "Mechanoid 2150"
+    ],
+    "affiliated_with": [],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Mechanoid",
+    "description": "Mechanoid Main aliases: Mechon, Mechonoid Biological type: Spherical robot Place of origin: Mechanus Notable individuals: Menoid, Mechanoid Queen, Mechanoid 2150 First appearance: The Chase Appearances: see list"
+  },
+  {
+    "name": "Slitheen",
+    "species_type": "Species",
+    "aliases": [],
+    "origin": "Raxacoricofallapatorius",
+    "first_appearance": "Aliens of London",
+    "first_episode": null,
+    "notable_individuals": [
+      "Blon Fel-Fotch Passameer-Day Slitheen",
+      "Korst Gogg Thek Lutiven-Day Slitheen",
+      "Slist Fayflut Marteveerthon Slitheen"
+    ],
+    "affiliated_with": [
+      "Raxacoricofallapatorian",
+      "Pandorica Alliance"
+    ],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Slitheen",
+    "description": "Slitheen family Affiliated with: Raxacoricofallapatorian criminal sects, Pandorica Alliance Place of origin: Raxacoricofallapatorius Notable individuals: Blon Fel-Fotch Passameer-Day Slitheen, Korst Gogg Thek Lutiven-Day Slitheen, Slist Fayflut Marteveerthon Slitheen First appearance: Aliens of London Appearances: see list Memorable moment Another memorable moment"
+  },
+  {
+    "name": "The Beast",
+    "species_type": "Entity",
+    "aliases": [],
+    "origin": null,
+    "first_appearance": null,
+    "first_episode": null,
+    "notable_individuals": [],
+    "affiliated_with": [],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Beast_(planet)",
+    "description": null
+  },
+  {
+    "name": "Vashta Nerada",
+    "species_type": "Species",
+    "aliases": [
+      "The piranhas of the air",
+      "shadow"
+    ],
+    "origin": null,
+    "first_appearance": "Silence in the Library",
+    "first_episode": null,
+    "notable_individuals": [],
+    "affiliated_with": [],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Vashta_Nerada",
+    "description": "Vashta Nerada Main aliases: The piranhas of the air, shadow Biological type: Microscopic, swarming carnivores First appearance: Silence in the Library Appearances: see list Memorable moment"
+  },
+  {
+    "name": "The Flood",
+    "species_type": "Species",
+    "aliases": [],
+    "origin": null,
+    "first_appearance": null,
+    "first_episode": null,
+    "notable_individuals": [],
+    "affiliated_with": [],
+    "key_stories": [],
+    "wiki_url": "https://tardis.fandom.com/wiki/Flood",
+    "description": "Floods were created by an over-abundance of water in a particular location. They were usually considered dangerous things to be avoided, but they were nevertheless sometimes intentionally created."
+  }
+]
