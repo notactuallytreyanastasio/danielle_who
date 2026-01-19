@@ -3,6 +3,7 @@ import type { Doctor, Companion, Enemy, Story } from '@core/timeline-types'
 import { DOCTORS } from '@core/doctor-data'
 import type { DoctorAdventures, StoryFormat } from '@core/eyespider-data'
 import { processRawData, FORMAT_COLORS } from '@core/eyespider-data'
+import { useUrlState } from '@core/use-url-state'
 
 // Get base path for GitHub Pages
 const BASE_PATH = import.meta.env.BASE_URL || '/'
@@ -319,9 +320,12 @@ function DoctorNode({ doctor, isExpanded, onToggle, adventures }: DoctorNodeProp
 }
 
 export function Timeline() {
-  const [expandedDoctor, setExpandedDoctor] = useState<number | null>(null)
-  const [filter, setFilter] = useState<'all' | 'classic' | 'modern'>('all')
+  const [expandedDoctorStr, setExpandedDoctorStr] = useUrlState<string>('doc', '')
+  const [filter, setFilter] = useUrlState<'all' | 'classic' | 'modern'>('era', 'all')
   const eyespiderData = useEyespiderData()
+
+  // Convert string to number for expanded doctor
+  const expandedDoctor = expandedDoctorStr ? parseInt(expandedDoctorStr, 10) : null
 
   // Map doctor number to eyespider data (handle War Doctor special case)
   const getAdventuresForDoctor = (doctorNumber: number): DoctorAdventures | undefined => {
@@ -339,7 +343,7 @@ export function Timeline() {
   })
 
   const toggleDoctor = (num: number) => {
-    setExpandedDoctor(expandedDoctor === num ? null : num)
+    setExpandedDoctorStr(expandedDoctor === num ? '' : num.toString())
   }
 
   return (

@@ -1,5 +1,6 @@
-import { useState, useMemo } from 'react'
+import { useMemo } from 'react'
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
+import { useUrlState } from '@core/use-url-state'
 import L from 'leaflet'
 import type { FilmingLocation } from '@core/location-types'
 import { getAllCities, getLocationsWithCoordinates } from '@core/location-data'
@@ -90,12 +91,22 @@ function MapControls({ center }: MapControlsProps) {
 }
 
 export function LocationsMap() {
-  const [selectedLocation, setSelectedLocation] = useState<FilmingLocation | null>(null)
-  const [cityFilter, setCityFilter] = useState<string>('all')
-  const [typeFilter, setTypeFilter] = useState<string>('all')
+  const [selectedLocationName, setSelectedLocationName] = useUrlState<string>('loc', '')
+  const [cityFilter, setCityFilter] = useUrlState<string>('city', 'all')
+  const [typeFilter, setTypeFilter] = useUrlState<string>('type', 'all')
 
   const cities = useMemo(() => getAllCities(), [])
   const locationsWithCoords = useMemo(() => getLocationsWithCoordinates(), [])
+
+  // Derive selectedLocation from selectedLocationName
+  const selectedLocation = useMemo(() => {
+    if (!selectedLocationName) return null
+    return locationsWithCoords.find(l => l.name === selectedLocationName) || null
+  }, [locationsWithCoords, selectedLocationName])
+
+  const setSelectedLocation = (location: FilmingLocation | null) => {
+    setSelectedLocationName(location?.name || '')
+  }
 
   const filteredLocations = useMemo(() => {
     return locationsWithCoords.filter((loc) => {

@@ -1,13 +1,13 @@
-import { useState } from 'react'
 import { Timeline } from './Timeline'
 import { LocationsMap } from './LocationsMap'
 import { KnowledgeGraph } from './KnowledgeGraph'
 import { EnrichedChronology } from './EnrichedChronology'
+import { useUrlState } from '@core/use-url-state'
 
 type ViewTab = 'chronology' | 'timeline' | 'locations' | 'knowledge'
 
 export function App() {
-  const [activeTab, setActiveTab] = useState<ViewTab>('timeline')
+  const [activeTab, setActiveTab] = useUrlState<ViewTab>('tab', 'timeline')
 
   return (
     <div className="app">

@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from 'react'
 import type { WikiEpisode, WikiData } from '@core/wiki-data'
 import { getWikiStats, parseDoctor } from '@core/wiki-data'
+import { useUrlState, useUrlBooleanState } from '@core/use-url-state'
 
 // Get base path for GitHub Pages
 const BASE_PATH = import.meta.env.BASE_URL || '/'
@@ -133,10 +134,7 @@ function EpisodeCard({ episode, isExpanded, onToggle }: EpisodeCardProps) {
           {episode.synopsis && (
             <div className="episode-card__section">
               <h4>📖 Synopsis</h4>
-              <p className="episode-card__synopsis">
-                {episode.synopsis.slice(0, 300)}
-                {episode.synopsis.length > 300 ? '...' : ''}
-              </p>
+              <p className="episode-card__synopsis">{episode.synopsis}</p>
             </div>
           )}
 
@@ -160,11 +158,11 @@ export function EnrichedChronology() {
   const [wikiData, setWikiData] = useState<WikiData | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [expandedId, setExpandedId] = useState<string | null>(null)
-  const [searchQuery, setSearchQuery] = useState('')
-  const [sortBy, setSortBy] = useState<SortBy>('number')
-  const [filterDoctor, setFilterDoctor] = useState<FilterDoctor>('all')
-  const [showMissingOnly, setShowMissingOnly] = useState(false)
+  const [expandedId, setExpandedId] = useUrlState<string>('episode', '')
+  const [searchQuery, setSearchQuery] = useUrlState<string>('q', '')
+  const [sortBy, setSortBy] = useUrlState<SortBy>('sort', 'number')
+  const [filterDoctor, setFilterDoctor] = useUrlState<FilterDoctor>('doctor', 'all')
+  const [showMissingOnly, setShowMissingOnly] = useUrlBooleanState('missing', false)
 
   useEffect(() => {
     async function loadData() {
@@ -370,7 +368,7 @@ export function EnrichedChronology() {
             episode={episode}
             isExpanded={expandedId === episode.story_number}
             onToggle={() => setExpandedId(
-              expandedId === episode.story_number ? null : episode.story_number
+              expandedId === episode.story_number ? '' : episode.story_number
             )}
           />
         ))}

@@ -10,6 +10,7 @@ import {
   getEnemyNodes,
   getLocationNodes,
 } from '@core/graph-data'
+import { useUrlState } from '@core/use-url-state'
 
 type Category = 'all' | 'doctors' | 'companions' | 'enemies' | 'locations' | 'stories'
 type ViewMode = 'browse' | 'graph'
@@ -177,10 +178,16 @@ export function KnowledgeGraph() {
   const [graphData, setGraphData] = useState<GraphData | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [searchQuery, setSearchQuery] = useState('')
-  const [category, setCategory] = useState<Category>('all')
-  const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null)
-  const [viewMode, setViewMode] = useState<ViewMode>('graph')
+  const [searchQuery, setSearchQuery] = useUrlState<string>('gq', '')
+  const [category, setCategory] = useUrlState<Category>('cat', 'all')
+  const [selectedNodeId, setSelectedNodeId] = useUrlState<string>('node', '')
+  const [viewMode, setViewMode] = useUrlState<ViewMode>('view', 'graph')
+
+  // Derive selectedNode from selectedNodeId
+  const selectedNode = useMemo(() => {
+    if (!graphData || !selectedNodeId) return null
+    return graphData.nodes.find(n => n.id.toString() === selectedNodeId) || null
+  }, [graphData, selectedNodeId])
 
   useEffect(() => {
     async function loadGraph() {
@@ -366,7 +373,7 @@ export function KnowledgeGraph() {
                     key={node.id}
                     node={node}
                     index={index}
-                    onSelect={setSelectedNode}
+                    onSelect={(node) => setSelectedNodeId(node.id.toString())}
                     isSelected={selectedNode?.id === node.id}
                   />
                 ))}
@@ -383,7 +390,7 @@ export function KnowledgeGraph() {
                 <NodeDetail
                   node={selectedNode}
                   index={index}
-                  onNavigate={(node) => setSelectedNode(node)}
+                  onNavigate={(node) => setSelectedNodeId(node.id.toString())}
                 />
               </div>
             )}
