@@ -2,6 +2,9 @@ import { useState, useEffect, useMemo } from 'react'
 import type { WikiEpisode, WikiData } from '@core/wiki-data'
 import { getWikiStats, parseDoctor } from '@core/wiki-data'
 
+// Get base path for GitHub Pages
+const BASE_PATH = import.meta.env.BASE_URL || '/'
+
 type SortBy = 'number' | 'title' | 'year' | 'doctor'
 type FilterDoctor = 'all' | string
 
@@ -166,7 +169,7 @@ export function EnrichedChronology() {
   useEffect(() => {
     async function loadData() {
       try {
-        const response = await fetch('/data/wiki-episodes.json')
+        const response = await fetch(`${BASE_PATH}data/wiki-episodes.json`)
         if (!response.ok) {
           throw new Error(`Failed to load: ${response.status}`)
         }

@@ -1516,6 +1516,50 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
 }
 
+.knowledge-graph__view-toggle {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.view-toggle-btn {
+  padding: var(--space-sm) var(--space-lg);
+  border: 2px solid var(--tardis-blue);
+  background: transparent;
+  color: var(--tardis-blue);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.view-toggle-btn:hover {
+  background: var(--tardis-blue);
+  color: white;
+}
+
+.view-toggle-btn--active {
+  background: var(--tardis-blue);
+  color: white;
+}
+
+.knowledge-graph__viewer {
+  width: 100%;
+  height: calc(100vh - 200px);
+  min-height: 600px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.knowledge-graph__iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #1a1a2e;
+}
+
 .knowledge-graph__stats {
   display: flex;
   justify-content: center;

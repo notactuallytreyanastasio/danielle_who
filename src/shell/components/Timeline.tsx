@@ -4,6 +4,9 @@ import { DOCTORS } from '@core/doctor-data'
 import type { DoctorAdventures, StoryFormat } from '@core/eyespider-data'
 import { processRawData, FORMAT_COLORS } from '@core/eyespider-data'
 
+// Get base path for GitHub Pages
+const BASE_PATH = import.meta.env.BASE_URL || '/'
+
 type ExpandedSection = 'companions' | 'enemies' | 'stories' | 'facts' | 'adventures' | null
 
 // Hook to load eyespider data
@@ -13,7 +16,7 @@ function useEyespiderData(): DoctorAdventures[] {
   useEffect(() => {
     async function loadData() {
       try {
-        const response = await fetch('/data/eyespider-data.json')
+        const response = await fetch(`${BASE_PATH}data/eyespider-data.json`)
         if (response.ok) {
           const rawData = await response.json()
           const processed = processRawData(rawData)

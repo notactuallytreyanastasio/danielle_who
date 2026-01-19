@@ -12,6 +12,10 @@ import {
 } from '@core/graph-data'
 
 type Category = 'all' | 'doctors' | 'companions' | 'enemies' | 'locations' | 'stories'
+type ViewMode = 'browse' | 'graph'
+
+// Get base path for GitHub Pages
+const BASE_PATH = import.meta.env.BASE_URL || '/'
 
 function NodeCard({
   node,
@@ -176,11 +180,12 @@ export function KnowledgeGraph() {
   const [searchQuery, setSearchQuery] = useState('')
   const [category, setCategory] = useState<Category>('all')
   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null)
+  const [viewMode, setViewMode] = useState<ViewMode>('graph')
 
   useEffect(() => {
     async function loadGraph() {
       try {
-        const response = await fetch('/data/graph-data.json')
+        const response = await fetch(`${BASE_PATH}data/graph-data.json`)
         if (!response.ok) {
           throw new Error(`Failed to load graph: ${response.status}`)
         }
@@ -280,84 +285,111 @@ export function KnowledgeGraph() {
         </p>
       </div>
 
-      {stats && (
-        <div className="knowledge-graph__stats">
-          <div className="stat-chip">
-            <span className="stat-chip__value">{stats.doctorCount}</span>
-            <span className="stat-chip__label">Doctors</span>
-          </div>
-          <div className="stat-chip">
-            <span className="stat-chip__value">{stats.companionCount}</span>
-            <span className="stat-chip__label">Companions</span>
-          </div>
-          <div className="stat-chip">
-            <span className="stat-chip__value">{stats.enemyCount}</span>
-            <span className="stat-chip__label">Enemies</span>
-          </div>
-          <div className="stat-chip">
-            <span className="stat-chip__value">{stats.locationCount}</span>
-            <span className="stat-chip__label">Locations</span>
-          </div>
-        </div>
-      )}
-
-      <div className="knowledge-graph__controls">
-        <input
-          type="text"
-          className="knowledge-graph__search"
-          placeholder="Search nodes... (e.g., 'Daleks', 'Rose Tyler', 'Gallifrey')"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-        />
-
-        <div className="knowledge-graph__categories">
-          {(['all', 'doctors', 'companions', 'enemies', 'locations', 'stories'] as Category[]).map(
-            (cat) => (
-              <button
-                key={cat}
-                className={`category-btn ${category === cat ? 'category-btn--active' : ''}`}
-                onClick={() => setCategory(cat)}
-              >
-                {cat.charAt(0).toUpperCase() + cat.slice(1)}
-              </button>
-            )
-          )}
-        </div>
+      <div className="knowledge-graph__view-toggle">
+        <button
+          className={`view-toggle-btn ${viewMode === 'graph' ? 'view-toggle-btn--active' : ''}`}
+          onClick={() => setViewMode('graph')}
+        >
+          Interactive Graph
+        </button>
+        <button
+          className={`view-toggle-btn ${viewMode === 'browse' ? 'view-toggle-btn--active' : ''}`}
+          onClick={() => setViewMode('browse')}
+        >
+          Browse Nodes
+        </button>
       </div>
 
-      <div className="knowledge-graph__content">
-        <div className="knowledge-graph__list">
-          <div className="knowledge-graph__count">
-            Showing {filteredNodes.length} node{filteredNodes.length !== 1 ? 's' : ''}
+      {viewMode === 'graph' ? (
+        <div className="knowledge-graph__viewer">
+          <iframe
+            src={`${BASE_PATH}graph/`}
+            title="Decision Graph Viewer"
+            className="knowledge-graph__iframe"
+          />
+        </div>
+      ) : (
+        <>
+          {stats && (
+            <div className="knowledge-graph__stats">
+              <div className="stat-chip">
+                <span className="stat-chip__value">{stats.doctorCount}</span>
+                <span className="stat-chip__label">Doctors</span>
+              </div>
+              <div className="stat-chip">
+                <span className="stat-chip__value">{stats.companionCount}</span>
+                <span className="stat-chip__label">Companions</span>
+              </div>
+              <div className="stat-chip">
+                <span className="stat-chip__value">{stats.enemyCount}</span>
+                <span className="stat-chip__label">Enemies</span>
+              </div>
+              <div className="stat-chip">
+                <span className="stat-chip__value">{stats.locationCount}</span>
+                <span className="stat-chip__label">Locations</span>
+              </div>
+            </div>
+          )}
+
+          <div className="knowledge-graph__controls">
+            <input
+              type="text"
+              className="knowledge-graph__search"
+              placeholder="Search nodes... (e.g., 'Daleks', 'Rose Tyler', 'Gallifrey')"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+
+            <div className="knowledge-graph__categories">
+              {(['all', 'doctors', 'companions', 'enemies', 'locations', 'stories'] as Category[]).map(
+                (cat) => (
+                  <button
+                    key={cat}
+                    className={`category-btn ${category === cat ? 'category-btn--active' : ''}`}
+                    onClick={() => setCategory(cat)}
+                  >
+                    {cat.charAt(0).toUpperCase() + cat.slice(1)}
+                  </button>
+                )
+              )}
+            </div>
           </div>
-          <div className="knowledge-graph__nodes">
-            {filteredNodes.slice(0, 100).map((node) => (
-              <NodeCard
-                key={node.id}
-                node={node}
-                index={index}
-                onSelect={setSelectedNode}
-                isSelected={selectedNode?.id === node.id}
-              />
-            ))}
-            {filteredNodes.length > 100 && (
-              <div className="knowledge-graph__more">
-                +{filteredNodes.length - 100} more nodes (refine your search)
+
+          <div className="knowledge-graph__content">
+            <div className="knowledge-graph__list">
+              <div className="knowledge-graph__count">
+                Showing {filteredNodes.length} node{filteredNodes.length !== 1 ? 's' : ''}
+              </div>
+              <div className="knowledge-graph__nodes">
+                {filteredNodes.slice(0, 100).map((node) => (
+                  <NodeCard
+                    key={node.id}
+                    node={node}
+                    index={index}
+                    onSelect={setSelectedNode}
+                    isSelected={selectedNode?.id === node.id}
+                  />
+                ))}
+                {filteredNodes.length > 100 && (
+                  <div className="knowledge-graph__more">
+                    +{filteredNodes.length - 100} more nodes (refine your search)
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {selectedNode && (
+              <div className="knowledge-graph__detail">
+                <NodeDetail
+                  node={selectedNode}
+                  index={index}
+                  onNavigate={(node) => setSelectedNode(node)}
+                />
               </div>
             )}
           </div>
-        </div>
-
-        {selectedNode && (
-          <div className="knowledge-graph__detail">
-            <NodeDetail
-              node={selectedNode}
-              index={index}
-              onNavigate={(node) => setSelectedNode(node)}
-            />
-          </div>
-        )}
-      </div>
+        </>
+      )}
     </div>
   )
 }
