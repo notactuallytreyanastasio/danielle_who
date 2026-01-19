@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Time Vortex Gradient -->
+    <radialGradient id="vortex" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a237e"/>
+      <stop offset="30%" stop-color="#0d1b3e"/>
+      <stop offset="60%" stop-color="#051225"/>
+      <stop offset="100%" stop-color="#000814"/>
+    </radialGradient>
+
+    <!-- TARDIS Blue Gradient -->
+    <linearGradient id="tardisBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#003b6f"/>
+      <stop offset="50%" stop-color="#00529b"/>
+      <stop offset="100%" stop-color="#003b6f"/>
+    </linearGradient>
+
+    <!-- Glow Effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Strong Glow -->
+    <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#vortex)"/>
+
+  <!-- Time Vortex Rings -->
+  <g opacity="0.15">
+    <ellipse cx="600" cy="315" rx="550" ry="280" fill="none" stroke="#4fc3f7" stroke-width="1"/>
+    <ellipse cx="600" cy="315" rx="480" ry="240" fill="none" stroke="#4fc3f7" stroke-width="1"/>
+    <ellipse cx="600" cy="315" rx="410" ry="200" fill="none" stroke="#4fc3f7" stroke-width="1"/>
+    <ellipse cx="600" cy="315" rx="340" ry="160" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+    <ellipse cx="600" cy="315" rx="270" ry="120" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+    <ellipse cx="600" cy="315" rx="200" ry="80" fill="none" stroke="#4fc3f7" stroke-width="3"/>
+  </g>
+
+  <!-- Scattered Stars -->
+  <g fill="#fff" opacity="0.6">
+    <circle cx="80" cy="60" r="1.5"/>
+    <circle cx="150" cy="120" r="1"/>
+    <circle cx="220" cy="45" r="2"/>
+    <circle cx="320" cy="90" r="1"/>
+    <circle cx="450" cy="50" r="1.5"/>
+    <circle cx="750" cy="70" r="2"/>
+    <circle cx="850" cy="40" r="1"/>
+    <circle cx="950" cy="100" r="1.5"/>
+    <circle cx="1050" cy="55" r="1"/>
+    <circle cx="1120" cy="90" r="2"/>
+    <circle cx="100" cy="550" r="1.5"/>
+    <circle cx="200" cy="580" r="1"/>
+    <circle cx="350" cy="560" r="2"/>
+    <circle cx="850" cy="570" r="1.5"/>
+    <circle cx="1000" cy="550" r="1"/>
+    <circle cx="1100" cy="590" r="1.5"/>
+    <circle cx="50" cy="300" r="1"/>
+    <circle cx="1150" cy="280" r="1.5"/>
+    <circle cx="30" cy="450" r="2"/>
+    <circle cx="1170" cy="400" r="1"/>
+  </g>
+
+  <!-- Glowing Center Point -->
+  <circle cx="600" cy="315" r="100" fill="url(#tardisBlue)" opacity="0.3" filter="url(#strongGlow)"/>
+
+  <!-- Gallifreyan-inspired circular design -->
+  <g transform="translate(600, 315)" opacity="0.2" stroke="#4fc3f7" fill="none" stroke-width="2">
+    <circle r="130"/>
+    <circle r="145"/>
+    <path d="M-50,-120 A130,130 0 0,1 50,-120" stroke-width="4"/>
+    <path d="M-80,100 A130,130 0 0,1 80,100" stroke-width="4"/>
+    <circle cx="-100" cy="0" r="15"/>
+    <circle cx="100" cy="0" r="15"/>
+    <circle cx="0" cy="-130" r="10"/>
+    <circle cx="0" cy="130" r="10"/>
+  </g>
+
+  <!-- Main Title -->
+  <text x="600" y="200" text-anchor="middle" font-family="'Orbitron', 'Courier New', monospace" font-size="72" font-weight="700" fill="#fff" filter="url(#glow)">
+    DANIELLE'S
+  </text>
+  <text x="600" y="280" text-anchor="middle" font-family="'Orbitron', 'Courier New', monospace" font-size="56" font-weight="500" fill="#4fc3f7" filter="url(#glow)">
+    DOCTOR EXPLORER
+  </text>
+
+  <!-- Decorative Line -->
+  <line x1="250" y1="310" x2="950" y2="310" stroke="url(#tardisBlue)" stroke-width="2" opacity="0.6"/>
+
+  <!-- Tagline -->
+  <text x="600" y="360" text-anchor="middle" font-family="'Space Grotesk', Arial, sans-serif" font-size="24" fill="#b0bec5">
+    The Complete Whoniverse Knowledge Base
+  </text>
+
+  <!-- Stats Row -->
+  <g transform="translate(600, 440)" font-family="'Orbitron', 'Courier New', monospace" text-anchor="middle">
+    <!-- 384 Episodes -->
+    <g transform="translate(-350, 0)">
+      <text y="0" font-size="42" font-weight="700" fill="#4fc3f7" filter="url(#glow)">384</text>
+      <text y="30" font-size="14" fill="#78909c" letter-spacing="2">TV EPISODES</text>
+    </g>
+
+    <!-- 1710 Stories -->
+    <g transform="translate(-120, 0)">
+      <text y="0" font-size="42" font-weight="700" fill="#4fc3f7" filter="url(#glow)">1,710+</text>
+      <text y="30" font-size="14" fill="#78909c" letter-spacing="2">TOTAL STORIES</text>
+    </g>
+
+    <!-- 16 Doctors -->
+    <g transform="translate(130, 0)">
+      <text y="0" font-size="42" font-weight="700" fill="#4fc3f7" filter="url(#glow)">16</text>
+      <text y="30" font-size="14" fill="#78909c" letter-spacing="2">DOCTORS</text>
+    </g>
+
+    <!-- Knowledge Graph -->
+    <g transform="translate(350, 0)">
+      <text y="0" font-size="42" font-weight="700" fill="#4fc3f7" filter="url(#glow)">2,731</text>
+      <text y="30" font-size="14" fill="#78909c" letter-spacing="2">GRAPH NODES</text>
+    </g>
+  </g>
+
+  <!-- Bottom Text -->
+  <text x="600" y="540" text-anchor="middle" font-family="'Space Grotesk', Arial, sans-serif" font-size="18" fill="#607d8b">
+    Full Chronology | All Doctors | Filming Locations | Knowledge Graph
+  </text>
+
+  <!-- Small TARDIS silhouette -->
+  <g transform="translate(1100, 520) scale(0.4)" fill="#003b6f" opacity="0.6">
+    <rect x="-25" y="-80" width="50" height="80" rx="2"/>
+    <rect x="-30" y="-85" width="60" height="10" rx="1"/>
+    <rect x="-20" y="-95" width="40" height="10" rx="1"/>
+    <rect x="-5" y="-105" width="10" height="15"/>
+    <rect x="-2" y="-115" width="4" height="10" fill="#4fc3f7" filter="url(#glow)"/>
+  </g>
+
+  <!-- Border -->
+  <rect x="10" y="10" width="1180" height="610" fill="none" stroke="url(#tardisBlue)" stroke-width="2" rx="8" opacity="0.5"/>
+</svg>
