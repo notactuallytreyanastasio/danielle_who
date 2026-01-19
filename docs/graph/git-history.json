@@ -1,5 +1,13 @@
 [
   {
+    "hash": "57208cb910bf1dd71f011e96b8cfb259b0260260",
+    "short_hash": "57208cb",
+    "author": "YOUR_NAME_HERE",
+    "date": "2026-01-19T00:58:31-05:00",
+    "message": "fix: Convert OG image from SVG to PNG for social platform compatibility\n\nSocial platforms (Facebook, Twitter, LinkedIn) don't support SVG for\nOpen Graph images. Converted to PNG (1200x630, 264KB).\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>",
+    "files_changed": 7
+  },
+  {
     "hash": "0459c39ad333619916758a6f64c7e0410641c2b1",
     "short_hash": "0459c39",
     "author": "YOUR_NAME_HERE",

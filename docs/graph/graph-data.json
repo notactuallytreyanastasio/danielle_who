@@ -30073,6 +30073,17 @@
       "created_at": "2026-01-19T00:56:09.847583-05:00",
       "updated_at": "2026-01-19T00:56:09.847583-05:00",
       "metadata_json": "{\"branch\":\"main\",\"commit\":\"0459c39\",\"confidence\":95}"
+    },
+    {
+      "id": 2735,
+      "change_id": "4eb92067-8734-4e66-8f84-8260f9c350b0",
+      "node_type": "action",
+      "title": "Converted OG image to PNG format",
+      "description": null,
+      "status": "pending",
+      "created_at": "2026-01-19T00:58:31.336236-05:00",
+      "updated_at": "2026-01-19T00:58:31.336236-05:00",
+      "metadata_json": "{\"branch\":\"main\",\"commit\":\"57208cb\",\"confidence\":95}"
     }
   ],
   "edges": [

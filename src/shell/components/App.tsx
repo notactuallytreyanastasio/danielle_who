@@ -2,9 +2,10 @@ import { Timeline } from './Timeline'
 import { LocationsMap } from './LocationsMap'
 import { KnowledgeGraph } from './KnowledgeGraph'
 import { EnrichedChronology } from './EnrichedChronology'
+import { HowItWasBuilt } from './HowItWasBuilt'
 import { useUrlState } from '@core/use-url-state'
 
-type ViewTab = 'chronology' | 'timeline' | 'locations' | 'knowledge'
+type ViewTab = 'chronology' | 'timeline' | 'locations' | 'knowledge' | 'about'
 
 export function App() {
   const [activeTab, setActiveTab] = useUrlState<ViewTab>('tab', 'timeline')
@@ -47,6 +48,12 @@ export function App() {
           >
             🧠 Knowledge Graph
           </button>
+          <button
+            className={`nav-tab ${activeTab === 'about' ? 'nav-tab--active' : ''}`}
+            onClick={() => setActiveTab('about')}
+          >
+            📖 How It Was Built
+          </button>
         </div>
 
         {activeTab === 'timeline' && <Timeline />}
@@ -56,6 +63,8 @@ export function App() {
         {activeTab === 'knowledge' && <KnowledgeGraph />}
 
         {activeTab === 'chronology' && <EnrichedChronology />}
+
+        {activeTab === 'about' && <HowItWasBuilt />}
       </main>
     </div>
   )
