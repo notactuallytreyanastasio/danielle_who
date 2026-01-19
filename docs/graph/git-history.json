@@ -1,5 +1,13 @@
 [
   {
+    "hash": "0459c39ad333619916758a6f64c7e0410641c2b1",
+    "short_hash": "0459c39",
+    "author": "YOUR_NAME_HERE",
+    "date": "2026-01-19T00:56:02-05:00",
+    "message": "feat: Add OG tags and Doctor Who-themed social share image\n\n- Add comprehensive OG meta tags for Facebook/social sharing\n- Add Twitter card meta tags for Twitter sharing\n- Create Doctor Who-themed SVG social share image (1200x630)\n  - Time vortex background with TARDIS blue gradient\n  - Gallifreyan-inspired circular design elements\n  - Stats: 384 episodes, 1,710+ stories, 16 Doctors, 2,731 nodes\n  - Small TARDIS silhouette accent\n- Create TARDIS favicon SVG\n- Update page title with tagline\n- Add theme-color for mobile browsers\n\nDescription: \"There was no true central, searchable, not ad-ridden,\ndeeply covered Dr. Who knowledge site, so I made one.\"\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>",
+    "files_changed": 9
+  },
+  {
     "hash": "1f66b962099712943f92244be31d6af4f995db70",
     "short_hash": "1f66b96",
     "author": "YOUR_NAME_HERE",
